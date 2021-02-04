@@ -23,6 +23,7 @@ class Numbers {
         return odd;
     }
 
+    //function to get numbers which are divisible by 3
     getDivisibleBy3(str){
         let array = str.split(",");
         let divisible = [];
