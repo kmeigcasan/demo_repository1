@@ -22,6 +22,18 @@ class Numbers {
         console.log(`Here are the odd numbers: ${odd.join()}`);
         return odd;
     }
+
+    getDivisibleBy3(str){
+        let array = str.split(",");
+        let divisible = [];
+        for(let i=0; i<array.length; i++){
+            if(array[i]%3==0){
+                divisible.push(array[i]);
+            }
+        }
+        console.log(`Here are the divisible by 3 numbers: ${divisible.join()}`);
+        return divisible;
+    }
     
 }
 module.exports = Numbers;
