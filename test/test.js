@@ -3,8 +3,6 @@ const expect = chai.expect;
 const assert = chai.assert;
 const Numbers = require('../codes/numbers');
 
-//test Jenkins
-//test Jenkins webhook
 describe("Numbers Model", function(){
     
     it("Return the expected return value on success", function(){
