@@ -9,7 +9,7 @@ describe("Numbers Model", function(){
         let num = new Numbers();
         let param = "1,2,3,4,5,6";
         let result = num.getEven(param);
-
+        console.log(result);
         expect(result).to.deep.equal(["2","4","6"]);
     });
 
