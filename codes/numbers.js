@@ -7,7 +7,6 @@ class Numbers {
                 even.push(array[i]);
             }
         }
-        console.log(`Here are the even numbers: ${even.join()}`);
         return even;
     }
 
@@ -19,7 +18,6 @@ class Numbers {
                 odd.push(array[i]);
             }
         }
-        console.log(`Here are the odd numbers: ${odd.join()}`);
         return odd;
     }
 
@@ -31,7 +29,6 @@ class Numbers {
                 divisible.push(array[i]);
             }
         }
-        console.log(`Here are the divisible by 3 numbers: ${divisible.join()}`);
         return divisible;
     }
     
