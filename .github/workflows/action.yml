@@ -1,0 +1,22 @@
+name: Github Actions Example
+
+on:
+  pull_request:
+    types: [opened]
+  push:
+    branches: 
+      - master
+      - staging
+
+jobs:
+  build:
+    name: Running Units Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
