@@ -6,7 +6,8 @@ on:
   push:
     branches: 
       - master
-      - staging
+      - develop
+      - feature/abc
 
 jobs:
   build:
